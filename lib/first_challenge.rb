@@ -18,7 +18,7 @@ def first_challenge
     if person == "Freddy Mercury"
       value.each do |info, input| 
         if info == :favorite_icecream_flavors
-          input.delete("strawberry")
+          input.delete_if("strawberry")
         end 
       end
     end
